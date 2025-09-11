@@ -47,22 +47,27 @@ Docker installed
 🚀 How to Run
 Download the Docker image
 
-docker pull ghcr.io/hendram/puppeteerworker2
+**docker pull ghcr.io/hendram/puppeteerworker2**
 Start the container
 
-docker run -it -d --network=host ghcr.io/hendram/puppeteerworker2 bash
+**docker run -it -d --network=host ghcr.io/hendram/puppeteerworker2 bash**
 Find your container name
 
-docker ps
-Example: pedantic_payne (your name will differ).
+**docker ps**
+Example: boring_zhukovsky (your name will differ).
 
 Enter the container
 
-docker exec -it pedantic_payne /bin/bash
+**docker exec -it pedantic_payne /bin/bash**
+
+
 Run the service
 
-cd /home/browserconnworker2
-node index.js
+**cd /home/browserconnworker2**
+**node index.js**
+
+
+
 🔧 Code Overview
 index.js
 🚀 Starts the worker, consumes jobs from Kafka, runs the scraper, and sends results back.
