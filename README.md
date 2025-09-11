@@ -123,7 +123,11 @@ puppeteerWorker.js
 
 
 📡 Data Flow
+
     A[chunkgeneratorforaimodel] -->|Jobs| B[Kafka: "topuppeteerworker"]
+
     B --> C[Puppeteer Worker 2 🕷️]
+
     C -->|Results| D[Kafka: "frompuppeteerworker"]
+
     D --> E[Backend merges with Worker 1 & 3]
