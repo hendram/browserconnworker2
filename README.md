@@ -48,9 +48,11 @@ Docker installed
 Download the Docker image
 
 **docker pull ghcr.io/hendram/puppeteerworker2**
+
 Start the container
 
 **docker run -it -d --network=host ghcr.io/hendram/puppeteerworker2 bash**
+
 Find your container name
 
 **docker ps**
@@ -65,6 +67,7 @@ Enter the container
 Run the service
 
 **cd /home/browserconnworker2**
+
 **node index.js**
 
 
