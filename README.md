@@ -37,14 +37,22 @@ The workers run in parallel to share the scraping load, increasing the speed and
     "searched": "your_query"
   }
 }
+
+--
+
 💻 Platform Requirements
+
+
 At least 12 GB RAM
 
 At least 4 CPU cores (Intel i5 or higher recommended)
 
 Docker installed
 
+
+
 🚀 How to Run
+
 Download the Docker image
 
 **docker pull ghcr.io/hendram/puppeteerworker2**
