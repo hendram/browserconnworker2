@@ -38,7 +38,7 @@ The workers run in parallel to share the scraping load, increasing the speed and
   }
 }
 
---
+---
 
 💻 Platform Requirements
 
@@ -49,7 +49,7 @@ At least 4 CPU cores (Intel i5 or higher recommended)
 
 Docker installed
 
-
+---
 
 🚀 How to Run
 
@@ -71,6 +71,7 @@ Enter the container
 
 **docker exec -it pedantic_payne /bin/bash**
 
+---
 
 Run the service
 
@@ -78,6 +79,7 @@ Run the service
 
 **node index.js**
 
+---
 
 
 🔧 Code Overview
@@ -101,13 +103,24 @@ puppeteerWorker.js
 
 📦 Returns results with metadata
 
+---
+
 ✨ Features & Functionality
+
 ✔️ Consumes jobs (URLs + keywords) from Kafka
+
 ✔️ Uses Puppeteer to scrape web pages in headless mode
+
 ✔️ Extracts page text and checks if it contains keywords
+
 ✔️ Produces structured results with metadata (URL, date, source, searched keyword)
+
 ✔️ Sends results back to Kafka for merging with outputs from other workers
+
 ✔️ Designed for distributed, scalable, and fast scraping
+
+---
+
 
 📡 Data Flow
     A[chunkgeneratorforaimodel] -->|Jobs| B[Kafka: "topuppeteerworker"]
