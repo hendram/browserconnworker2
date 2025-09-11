@@ -54,6 +54,7 @@ Start the container
 Find your container name
 
 **docker ps**
+
 Example: boring_zhukovsky (your name will differ).
 
 Enter the container
@@ -69,11 +70,14 @@ Run the service
 
 
 🔧 Code Overview
+
+
 index.js
 🚀 Starts the worker, consumes jobs from Kafka, runs the scraper, and sends results back.
 
 kafka.js
 🔌 Handles Kafka connection, producer, and consumer setup.
+
 
 puppeteerWorker.js
 🕷️ Contains the runScraper function, which:
